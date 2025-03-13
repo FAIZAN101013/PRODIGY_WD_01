@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 2000px; /* Just to enable scrolling */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(201, 187, 187);
+    padding: 15px 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #69b7e4; /* Dark background when scrolled */
+}
+
+.navbar.scrolled_two {
+    background-color: #4c6b7e; /* Dark background when scrolled */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(24, 25, 26);
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: yellow; /* Change text color on hover */
+    background-color: rgba(24, 22, 22, 0.2); /* Subtle background */
+    border-radius: 5px;
+}
+
+.main-content {
+    padding: 10px 20px; /* Add padding to avoid overlap with fixed navbar */
+    margin-top: 60px; /* Add margin to avoid overlap with fixed navbar */
+    background-color: #f4f4f4; /* Light background color */
+    max-width: 800px; /* Set a max width for the content */
+    margin: 60px auto; /* Center the content horizontally */
+    color: #333; /* Text color */
+    line-height: 1.6; /* Line height for better readability */
+}
+
+.main-content h1, .main-content h2, .main-content h3 {
+    margin-top: 0;
+}
+
+.main-content p {
+    margin-bottom: 20px;
+}
